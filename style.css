@@ -1,0 +1,43 @@
+body{
+    background: url("./img/stretched-1360-768-1065042.jpg");
+}
+img{
+    position: absolute;
+    width: 700px;
+    opacity: 0;
+    animation: imgPrincipal 3s forwards;
+    animation-delay: 5s;
+}
+.logo{
+    width: 500px;
+    animation: imgLogo 5s forwards;
+    
+}
+
+
+@keyframes imgPrincipal{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;    
+    }
+}
+@keyframes imgLogo{
+    0%{
+        opacity: 0;
+        right: 400px;
+        top: 120px;
+    }
+    50%{
+        opacity: 1;
+        right: 400px;
+        top: 120px;
+    }
+    100%{
+        opacity: 1;
+        right: 50px;
+        top: 120px;
+    }
+}
+
